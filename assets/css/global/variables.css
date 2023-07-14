@@ -1,0 +1,23 @@
+/* Essas são as variáveis para usar no site e ficar mais escalável a edição das coisas */
+:root {
+    --cor-branco: #FFFFFF;
+    --cor-preto: #000000;
+  
+    --cor-pele-claro: #d9af89;
+    --cor-pele-escuro: #b08d6e;
+  
+    --cor-cinza: #9195a0;
+    --cor-escuro: #0B0E14;
+  
+    --cor-vermelho: #f4796e;
+    --cor-azul: #4983e6;
+    --cor-verde: #2c9d58;
+  
+    --cor-escuro-transparente: rgba(11, 14, 20, 0.5);
+    --cor-branco-transparente: rgba(255, 255, 255, 0.5);
+  
+    --regular: 'mark-pro-regular';
+    --light: 'montserrat-regular';
+    --bold: 'montserrat-semibold';
+  }
+  

@@ -1,0 +1,138 @@
+/* <section class="conteudo"> */
+body,html {
+    background-color: var(--cor-branco) !important;
+  }
+  section.conteudo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--cor-branco);
+  }
+  section.conteudo .imagem {
+    min-height: 100vh;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+  section.conteudo .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 80px;
+    width: 50%;
+  }
+  section.conteudo .texto svg {
+    width: 100%;
+    max-width: 300px;
+  }
+  section.conteudo .texto img.logo {
+    width: 100%;
+    max-width: 200px;
+  }
+  section.conteudo .texto h1 {
+    font-family: var(--bold);
+    font-size: clamp(2.5rem, 1vw, 4.5rem);
+    color: var(--cor-preto);
+    line-height: 1.5;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px 0 0 0;
+  }
+  section.conteudo .texto h1 span {
+    color: var(--cor-pele-claro);
+  }
+  section.conteudo .texto p {
+    font-family: var(--regular);
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    color: var(--cor-preto);
+    width: 100%;
+    max-width: 500px;
+    line-height: 1.5;
+    margin: 10px 0;
+  }
+  section.conteudo .texto h3 {
+    font-family: var(--bold);
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    color: var(--cor-vermelho);
+    line-height: 1.5;
+    margin: 15px 0 0 0;
+  }
+  section.conteudo .texto a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: var(--cor-branco);
+    box-shadow: 0 -10px 20px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0 0 0;
+    transition: all 0.3s;
+  }
+  section.conteudo .texto a img {
+    width: 100%;
+    max-width: 50px;
+    border-radius: 50%;
+    background-color: var(--cor-vermelho);
+    margin: 0 20px 0 0;
+    transition: all 0.3s;
+  }
+  section.conteudo .texto a h4 {
+    font-family: var(--bold);
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    color: var(--cor-preto);
+    line-height: 1.5;
+    margin: 0 0 5px 0;
+    transition: all 0.3s;
+  }
+  section.conteudo .texto a h5 {
+    font-family: var(--regular);
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    color: var(--cor-preto);
+    line-height: 1.5;
+    opacity: 0.6;
+  }
+  section.conteudo .texto a:hover {
+    box-shadow: 0 -10px 20px 0 #b08d6e27;
+    border: 1px solid #b08d6ea4;
+  }
+  section.conteudo .texto a:hover img {
+    background-color: var(--cor-pele-escuro);
+  }
+  section.conteudo .texto a:hover h4 {
+    color: var(--cor-pele-escuro);
+  }
+  /* Responsivo */
+  @media screen and (max-width: 1000px) {
+    section.conteudo {
+      flex-direction: column;
+    }
+    section.conteudo .imagem {
+      min-height: 200px;
+      width: 100%;
+    }
+    section.conteudo .texto {
+      padding: 30px 20px 100px 20px;
+      width: 100%;
+    }
+    section.conteudo .texto img.logo {
+      max-width: 150px;
+    }
+    section.conteudo .texto h1 {
+      font-size: clamp(1.5rem, 1vw, 3.5rem);
+    }
+    section.conteudo .texto a {
+      padding: 15px;
+      margin: 15px 0 0 0;
+    }
+    section.conteudo .texto a img {
+      margin: 0 10px 0 0;
+    }
+    section.conteudo .texto a h5 {
+      font-size: clamp(0.8rem, 1vw, 1rem);
+    }
+  }
+  

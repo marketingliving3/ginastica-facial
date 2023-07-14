@@ -1,0 +1,44 @@
+/* <section class="fundo"> */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    position: relative;
+    background-color: var(--cor-branco);
+    width: 100%;
+  }
+  body.limpo {
+    background-image: none;
+  }
+  .sombra {
+    background: -webkit-linear-gradient(to left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1));
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1));
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+  }
+  img.mulher {
+    height: 80%;
+    left: 50%;
+    position: absolute;
+    top: 20%;
+    z-index: 1;
+  }
+  @media screen and (max-width: 1000px) {
+    body {
+      height: auto;
+      min-height: auto;
+      max-height: auto;
+    }
+    img.mulher {
+      display: none;
+    }
+    .sombra {
+      display: none;
+    }
+  }

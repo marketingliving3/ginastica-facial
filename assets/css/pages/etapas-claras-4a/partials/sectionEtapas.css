@@ -1,0 +1,119 @@
+/* <section class="etapas"> */
+section.etapas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 100px 10px 100px;
+    width: 100%;
+    z-index: 4;
+    transition: all 0.3s;
+  }
+  /* Imagens */
+  section.etapas img.logo {
+    margin: 0 20px 0 0;
+    max-width: 130px;
+    width: 100%;
+  }
+  section.etapas svg {
+    margin: 0 20px 0 0;
+    max-width: 210px;
+    width: 100%;
+  }
+  section.etapas a {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-family: var(--regular);
+    font-size: clamp(0.6rem, 1vw, 0.8rem);
+    color: var(--cor-branco);
+    box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.3);
+    background: -webkit-linear-gradient(to left, #d9af89, #b08d6e);
+    background: linear-gradient(to left, #d9af89, #b08d6e);
+    border-radius: 50px;
+    margin: 0 0 0 20px;
+    padding: 8px 15px 8px 20px;
+    width: 100%;
+    max-width: 120px;
+    transition: all 0.3s;
+  }
+  section.etapas a img {
+    width: 100%;
+    max-width: 15px;
+    margin-left: auto;
+    transition: all 0.3s;
+  }
+  section.etapas a:hover {
+    box-shadow: 0 0 30px 0 rgba(217, 175, 137, 0.6);
+  }
+  section.etapas a:hover img {
+    transform: scale(1.2);
+  }
+  section.etapas a.continuar {
+    opacity: 1;
+    pointer-events: all;
+  }
+  section.etapas a.continuar.bloqueado {
+    opacity: 0.1;
+    pointer-events: none;
+  }
+  /* Progresso */
+  section.etapas .progresso {
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 2px;
+    position: relative;
+    width: 100%;
+  }
+  section.etapas .progresso .atual {
+    --bolinha-final: 100%;
+    --bolinha-inicio: 0%;
+    animation: mexerBolinha 1s linear forwards;
+    background-color: var(--cor-pele-claro);
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transition: all 0.3s;
+    width: 0%;
+  }
+  section.etapas .progresso .atual .bolinha {
+    background-color: var(--cor-pele-claro);
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  @keyframes mexerBolinha {
+    0% {
+      width: var(--bolinha-inicio);
+    }
+    100% {
+      width: var(--bolinha-final);
+    }
+  }
+  /* Responsiva */
+  @media screen and (max-width: 1000px) {
+    section.etapas {
+      padding: 20px 30px;
+    }
+    section.etapas img.logo {
+      margin: 0 20px 0 0;
+      max-width: 110px;
+    }
+    section.etapas svg {
+      margin: 0 20px 0 0;
+      max-width: 160px;
+      width: 100%;
+    }
+    section.etapas a {
+      display: none;
+    }
+  }
+  

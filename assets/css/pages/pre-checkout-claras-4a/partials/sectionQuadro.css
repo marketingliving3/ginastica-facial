@@ -1,0 +1,484 @@
+/* <section class="quadro"> */
+section.quadro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 100px 100px 100px 100px;
+    position: fixed;
+    height: 100vh;
+    max-height: 100vh;
+    min-height: 100vh;
+    width: 100%;
+    overflow-y: scroll;
+    z-index: 3;
+  }
+  section.quadro .temporizador {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f02828;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+  }
+  section.quadro .temporizador h3 {
+    font-family: var(--bold);
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    line-height: 1.5;
+    color: var(--cor-branco);
+  }
+  /* Conteúdo  */
+  section.quadro .conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    background-color: var(--cor-branco);
+    border: 2px solid rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+  }
+  /* Titulo */
+  section.quadro .conteudo .titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  section.quadro .conteudo .titulo img {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 0 20px 0;
+  }
+  section.quadro .conteudo .titulo svg {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 0 20px 0;
+  }
+  section.quadro .conteudo .titulo h2 {
+    font-family: var(--bold);
+    font-size: clamp(1.6rem, 1vw, 2rem);
+    line-height: 1.5;
+    color: var(--cor-preto);
+    margin: 0 0 10px 0;
+  }
+  section.quadro .conteudo .titulo p {
+    color: var(--cor-cinza);
+    font-family: var(--regular);
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    line-height: 1.5;
+  }
+  /* Tempo */
+  section.quadro .conteudo .tempo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(216, 174, 136, 0.1);
+    border: 2px solid rgba(216, 174, 136, 0.5);
+    margin: 30px 0;
+  }
+  section.quadro .conteudo .tempo p {
+    color: var(--cor-preto);
+    font-family: var(--bold);
+    font-size: clamp(1.2rem, 1vw, 1.5rem);
+    line-height: 1.5;
+  }
+  section.quadro .conteudo .tempo h3 {
+    color: #f02828;
+    font-family: var(--bold);
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    line-height: 1.5;
+    margin: 10px 0;
+  }
+  section.quadro .conteudo .tempo h4 {
+    color: var(--cor-preto);
+    font-family: var(--regular);
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    line-height: 1.5;
+  }
+  /* Gráfico */
+  section.quadro .conteudo .grafico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  section.quadro .conteudo .grafico p {
+    color: var(--cor-preto);
+    font-family: var(--regular);
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    line-height: 1.5;
+  }
+  section.quadro .conteudo .grafico h2 {
+    color: var(--cor-pele-escuro);
+    font-family: var(--bold);
+    font-size: clamp(1.6rem, 1vw, 2rem);
+    line-height: 1.5;
+    margin: 10px 0;
+  }
+  section.quadro .conteudo .grafico h3 {
+    color: var(--cor-preto);
+    font-family: var(--regular);
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    line-height: 1.5;
+  }
+  section.quadro .conteudo .grafico img {
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+  /* Benefícios */
+  section.quadro .conteudo .beneficios {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 30px 0;
+    width: 100%;
+  }
+  section.quadro .conteudo .beneficios h2 {
+    font-family: var(--regular);
+    font-size: clamp(1.5rem, 1vw, 2rem);
+    line-height: 1.5;
+    color: var(--cor-preto);
+  }
+  section.quadro .conteudo .beneficios .item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0 0;
+  }
+  section.quadro .conteudo .beneficios .item img {
+    width: 100%;
+    max-width: 20px;
+    margin: 0 10px 0 0;
+  }
+  section.quadro .conteudo .beneficios .item p {
+    color: var(--cor-cinza);
+    font-family: var(--regular);
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    line-height: 1.5;
+  }
+  /* Planos */
+  section.quadro .conteudo .planos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  section.quadro .conteudo .planos h2 {
+    font-family: var(--bold);
+    font-size: clamp(1.5rem, 1vw, 2rem);
+    line-height: 1.5;
+    color: var(--cor-preto);
+    margin: 0 0 10px 0;
+  }
+  section.quadro .conteudo .planos h5 {
+    font-family: var(--bold);
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    width: 100%;
+    background-color: #7ad321;
+    border-radius: 10px 10px 0 0;
+    padding: 5px;
+    margin: 10px 0 0 0;
+    text-align: center;
+    color: var(--cor-branco);
+  }
+  section.quadro .conteudo .planos button.primeiro {
+    margin: 0;
+    border-radius: 0 0 10px 10px;
+  }
+  section.quadro .conteudo .planos button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-branco);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 10px 10px 20px;
+    margin: 10px 0 0 0;
+    transition: all 0.3s;
+  }
+  section.quadro .conteudo .planos button:hover {
+    opacity: 0.6;
+  }
+  section.quadro .conteudo .planos button.ativo {
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+    border: 2px solid #7ad321;
+    pointer-events: none;
+  }
+  section.quadro .conteudo .planos button .info {
+    display: flex;
+    align-items: center;
+  }
+  section.quadro .conteudo .planos button .info span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background-color: var(--cor-branco);
+    margin: 0 10px 0 0;
+    padding: 3px;
+    transition: all 0.3s;
+  }
+  section.quadro .conteudo .planos button.ativo .info span {
+    background-color: #7ad321;
+    border: 2px solid #7ad321;
+  }
+  section.quadro .conteudo .planos button .info span img {
+    width: 100%;
+  }
+  section.quadro .conteudo .planos button .info p {
+    font-family: var(--bold);
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    line-height: 1.5;
+    color: var(--cor-preto);
+    text-align: left;
+    transition: all 0.3s;
+  }
+  section.quadro .conteudo .planos button.ativo .info p {
+    color: #7ad321;
+  }
+  section.quadro .conteudo .planos button .valor {
+    display: flex;
+    align-items: center;
+  }
+  section.quadro .conteudo .planos button .valor p {
+    font-family: var(--bold);
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    line-height: 1.5;
+    color: var(--cor-preto);
+    margin: 0 30px 0 0;
+  }
+  section.quadro .conteudo .planos button .valor .tag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px 10px 10px 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 7px 10px 10px 7px;
+    position: relative;
+    transition: all 0.3s;
+  }
+  section.quadro .conteudo .planos button .valor .tag .seta {
+    border-right: 10px solid rgba(0, 0, 0, 0.05);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    left: -15px;
+    transition: all 0.3s;
+  }
+  section.quadro .conteudo .planos button.ativo .valor .tag .seta {
+    border-right: 10px solid #7ad321;
+  }
+  section.quadro .conteudo .planos button.ativo .valor .tag {
+    background-color: #7ad321;
+  }
+  section.quadro .conteudo .planos button.ativo .valor .tag h3 {
+    color: var(--cor-branco);
+  }
+  section.quadro .conteudo .planos button.ativo .valor .tag h4 {
+    color: var(--cor-branco);
+  }
+  section.quadro .conteudo .planos button .valor .tag h3 {
+    font-family: var(--bold);
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    line-height: 1.5;
+    color: var(--cor-preto);
+    transition: all 0.3s;
+  }
+  section.quadro .conteudo .planos button .valor .tag h4 {
+    font-family: var(--regular);
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    line-height: 1.5;
+    color: var(--cor-preto);
+    transition: all 0.3s;
+  }
+  section.quadro .conteudo .planos a {
+    background-color: #7ad321;
+    font-family: var(--bold);
+    color: var(--cor-branco);
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    margin: 20px 0 0 0;
+    transition: all 0.3s;
+  }
+  section.quadro .conteudo .planos a:hover {
+    background-color: #5b9126;
+  }
+  /* Garantia */
+  section.quadro .conteudo .garantia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 30px 0 0 0;
+  }
+  section.quadro .conteudo .garantia h2 {
+    font-family: var(--bold);
+    font-size: clamp(1.5rem, 1vw, 2rem);
+    line-height: 1.5;
+    color: var(--cor-preto);
+    margin: 0 0 10px 0;
+    width: 100%;
+    max-width: 400px;
+  }
+  section.quadro .conteudo .garantia p {
+    font-family: var(--regular);
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    line-height: 1.5;
+    color: var(--cor-cinza);
+  }
+  /* Depoimentos */
+  section.quadro .conteudo .depoimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+  section.quadro .conteudo .depoimentos h2 {
+    font-family: var(--regular);
+    font-size: clamp(1.5rem, 1vw, 2rem);
+    line-height: 1.5;
+    color: var(--cor-preto);
+  }
+  section.quadro .conteudo .depoimentos .item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0 0 0;
+  }
+  section.quadro .conteudo .depoimentos .item .pessoa {
+    display: flex;
+    align-items: center;
+  }
+  section.quadro .conteudo .depoimentos .item .pessoa img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+  }
+  section.quadro .conteudo .depoimentos .item .pessoa .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 0 0 10px;
+  }
+  section.quadro .conteudo .depoimentos .item .pessoa .info h3 {
+    font-family: var(--bold);
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    line-height: 1.5;
+    color: #4386c5;
+  }
+  section.quadro .conteudo .depoimentos .item .pessoa .info h4 {
+    font-family: var(--regular);
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    line-height: 1.5;
+    color: var(--cor-cinza);
+  }
+  section.quadro .conteudo .depoimentos .item p {
+    font-family: var(--regular);
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    line-height: 1.5;
+    color: var(--cor-preto);
+    margin: 10px 0 0 0;
+  }
+  section.quadro .conteudo .depoimentos a {
+    background-color: #7ad321;
+    font-family: var(--bold);
+    color: var(--cor-branco);
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    margin: 20px 0 0 0;
+    transition: all 0.3s;
+  }
+  section.quadro .conteudo .depoimentos a:hover {
+    background-color: #5b9126;
+  }
+  /* Dúvidas */
+  section.quadro .conteudo .duvidas {
+    display: flex;
+    flex-direction: column;
+  }
+  section.quadro .conteudo .duvidas h3 {
+    font-family: var(--regular);
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    line-height: 1.5;
+    color: var(--cor-preto);
+    margin: 20px 0 0 0;
+  }
+  section.quadro .conteudo .duvidas p {
+    color: var(--cor-cinza);
+    font-family: var(--regular);
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    line-height: 1.5;
+  }
+  /* Responsivo */
+  @media screen and (max-width: 1000px) {
+    /* Quadro */
+    section.quadro {
+      padding: 0;
+      position: relative;
+      align-items: center;
+      height: auto;
+      max-height: auto;
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+    /* Conteudo */
+    section.quadro .conteudo {
+      padding: 80px 20px 150px 20px;
+      border-radius: 20px 20px 0 0;
+      width: 100%;
+    }
+    /* Planos */
+    section.quadro .conteudo .planos button {
+      padding: 5px 5px 5px 15px;
+    }
+    section.quadro .conteudo .planos button .info p {
+      font-size: clamp(0.8rem, 1vw, 1rem);
+      width: 100%;
+      max-width: 60px;
+    }
+    section.quadro .conteudo .planos button .valor p {
+      font-size: clamp(0.8rem, 1vw, 1rem);
+      margin: 0 25px 0 0;
+    }
+    section.quadro .conteudo .planos button .valor .tag {
+      padding: 10px;
+    }
+    section.quadro .conteudo .planos button .valor .tag h3 {
+      font-size: clamp(0.8rem, 1vw, 1rem);
+    }
+    section.quadro .conteudo .planos button .valor .tag h4 {
+      font-size: clamp(0.6rem, 1vw, 0.8rem);
+    }
+  }
